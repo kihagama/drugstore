@@ -1,0 +1,133 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Merriweather', serif;
+
+    
+    min-height: 100vh;
+    background-color: #f3f4f6; /* Light grey background */
+}
+header{
+
+    width: 100%;
+    height: 5rem;
+    background: rgb(1, 158, 1);
+padding: 20px;
+}
+h1{
+    font-size: 2rem;
+    color: #ffffff; /* White text */
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+/* Form container styling */
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color:white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    margin-top: 2%;
+    border: 2px solid green;
+    
+}
+
+/* Form title */
+#form-title {
+    font-size: 1.8rem;
+    color: #333333; /* Dark grey text */
+    margin-bottom: 1rem;
+}
+
+/* Alert styling */
+.alert {
+    background-color: #4CAF50; /* Green background */
+    color: white;              /* White text */
+    padding: 10px;
+    margin: 0;                 /* No margin */
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    position: fixed;           /* Fixed position */
+    top: -100px;              /* Start off-screen */
+    left: 50%;                /* Center horizontally */
+    transform: translateX(-50%); /* Center adjustment */
+    transition: top 0.5s ease; /* Slide effect */
+    z-index: 1000;            /* On top of other elements */
+}
+
+/* Show class for sliding down */
+.alert.show {
+    top: 0; /* Slide into view */
+}
+
+
+/* Form input styling */
+#auth-form input[type="text"],
+#auth-form input[type="email"],
+#auth-form input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+#auth-form input[type="text"]:focus,
+#auth-form input[type="email"]:focus,
+#auth-form input[type="password"]:focus {
+    outline: none;
+    border-color: #4CAF50; /* Green border on focus */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3); /* Light green shadow */
+}
+
+/* Button styling */
+#submit-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-top: 1rem;
+}
+
+#submit-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Toggle text and link */
+#toggle-text {
+    margin-top: 1rem;
+    color: #666666; /* Medium grey text */
+    font-size: 0.9rem;
+}
+
+#toggle-link {
+    color: #4CAF50; /* Green link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#toggle-link:hover {
+    text-decoration: underline;
+}
